@@ -1,0 +1,548 @@
+body{
+    margin: 0px;
+}
+/* Menu */
+
+.nav{
+    height: 49px;
+    width: 100%;
+    background-color: rgb(10, 19, 4);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: visible;
+
+}
+#menu{
+
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    overflow: visible;
+    list-style-type: none;
+    padding-left: 0px;
+
+}
+
+#menu li{
+    float: left;
+
+}
+
+
+#menu li a
+{   
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: 15px bold;
+    background-color: rgb(10, 19, 4);
+    /* border-right: outset 1px rgb(24, 131, 37);   */
+}
+#menu li span{
+    background-color:rgb(78, 116, 21);
+    padding: 15px;
+    color: whitesmoke;
+
+}
+
+
+#menu li a:hover{
+    color: rgb(78, 116, 21);
+    transition: 2s;
+    border: solid 1px rgb(78, 116, 21);
+
+
+  
+
+}   
+#menu li:hover .submenu{
+    display: block;
+}
+
+.submenu{
+    list-style-type: none;
+    padding-left: 0px;
+    display: none;
+    overflow: visible;
+    position: absolute;
+    z-index:1;
+
+
+}
+#menu .submenu li
+{   
+    float: none;
+    margin-top: 25px;
+    overflow: visible;
+
+    
+}
+#menu .submenu li a{
+    padding-right: 45px;
+}
+
+
+
+#search{
+    position: absolute;
+    top: 9;
+    right: 5%;
+    border-radius: 10px;
+    padding: 5px;
+    width: 80;
+}
+#search:focus{
+    transition: 1s;
+    width: 300px;
+
+/* End Menu */
+/* Slide bar */
+}
+.pic{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+
+
+    
+}
+
+.pic img{
+    width: 100%;
+    height: 680px;
+}
+.pic label{
+    position: absolute;
+    left: 2px;
+    bottom: 10px;
+    background-color: gray;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 35px;
+    display: block;
+    animation: mymove 4s ;
+
+}
+@keyframes mymove {
+    from {opacity:0 ; }
+    to {opacity:1 ;}
+  }
+
+/*End Slide bar */
+/* Our team */
+
+#team{
+    height: 400px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    left: 0;
+    top: 0;
+    background-color: #f1f1f1;
+}
+
+#team > div {
+    background-color: #f1f1f1;
+    margin-top:70px;
+    margin-left: 109;
+    margin-bottom: 50px;
+    padding: 120px;
+    font-size: 30px;
+  }
+
+#team h2{
+    position: absolute;
+    left: 45%;
+    
+}
+
+.team1 img{
+    position: absolute;
+    top: 85px;
+    left: 138;
+    width: 180px;
+    border-radius: 400px;
+    
+
+}
+
+.team1 p{
+    position: absolute;
+    top: 199px;
+    left: 150;
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 25;
+}
+
+.team2 img{
+    position: absolute;
+    top: 85px;
+    left: 489;
+    width: 180px;
+    border-radius: 400px;
+
+
+}
+
+.team2 p{
+    position: absolute;
+    top: 199px;
+    left: 535;
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 25;
+}
+
+.team3 img{
+    position: absolute;
+    top: 85px;
+    left: 838;
+    width: 180px;
+    border-radius: 400px;
+
+
+}
+
+.team3 p{
+    position: absolute;
+    top: 199px;
+    left: 898;
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 25;
+}
+
+.team4 img{
+    position: absolute;
+    top: 85px;
+    left: 1189;
+    width: 180px;
+    border-radius: 400px;
+
+
+}
+
+.team4 p{
+    position: absolute;
+    top: 199px;
+    left: 1225;
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 25;
+}
+/* End Our team */
+
+/* Work */
+#work{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    left: 0;
+    top: 0;
+    background-color: #141313cc;
+}
+#work p {
+    color: azure;
+    position: absolute;
+    top: 80px;
+    left: 35px;
+    width: 390;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20;
+    
+}
+#work > div {
+    background-color: #f1f1f1;
+    padding: 140px;
+    margin: 30;
+    font-size: 30px;
+  }
+
+  .work1 img{
+    position: absolute;
+    display: flexbox;
+    top: 30px;
+    left: 529px;
+    width: 281px;
+    overflow: hidden;
+
+  }
+
+  .work1 h5{
+    position: absolute;
+    top: 169px;
+    left: 549px;
+  }
+  .work1 h6{
+    position: absolute;
+    top: 215px;
+    left: 549px;
+  }
+
+  .work1 ul{
+    position: absolute;
+    top: 295px;
+    left: 509px;
+    list-style-type:none;
+    font-family: arial;
+    font-size: 20;
+  }
+
+  .work2 img{
+    position: absolute;
+    display: flexbox;
+    top: 30px;
+    left: 869px;
+    width: 281px;
+    overflow: hidden;
+
+  }
+
+  .work2 h5{
+    position: absolute;
+    top: 169px;
+    left: 889px;
+  }
+  .work2 h6{
+    position: absolute;
+    top: 215px;
+    left: 889px;
+  }
+
+  .work2 ul{
+    position: absolute;
+    top: 295px;
+    left: 849px;
+    list-style-type:none;
+    font-family: arial;
+    font-size: 20;
+  }
+
+  .work3 img{
+    position: absolute;
+    display: flexbox;
+    top: 30px;
+    left: 1209px;
+    width: 281px;
+    overflow: hidden;
+
+  }
+
+  .work3 h5{
+    position: absolute;
+    top: 169px;
+    left: 1229px;
+  }
+  .work3 h6{
+    position: absolute;
+    top: 215px;
+    left: 1229px;
+  }
+
+  .work3 ul{
+    position: absolute;
+    top: 295px;
+    left: 1189px;
+    list-style-type:none;
+    font-family: arial;
+    font-size: 20;
+  }
+  /* End Work */
+  /* Price */
+
+
+
+    
+
+.warper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  flex-wrap:nowrap;
+
+
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 35px;
+}
+  
+
+
+
+.warper .pricing-table{
+  width: 30%;
+  height: 500px;
+  background-image: linear-gradient(to right bottom, #454143, #4d444b, #524856, #554d61, #53536e, #48536e, #3c526d, #2f526a, #22495a, #1a404a, #17373a, #152d2c);  margin: 10px;
+  padding: 0px 10px 0px;
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+.warper .pricing-table h2{
+  text-transform: uppercase;
+  padding: 0 0 10px;
+  color: #fff;
+  letter-spacing: 5px;
+
+}
+
+.warper .pricing-table .contant{
+  background-color: #fff;
+  border-radius: 5px;
+  padding-left: 0;
+  margin: 20px;
+
+
+}
+.warper .pricing-table .contant ul{
+  padding-left: 0px;
+}
+
+.warper .pricing-table .contant ul li{
+  list-style: none;
+  font-size: 13px;
+  border: 1px solid;
+  width: 100%;
+
+  padding: 18px 0;  
+  
+  
+}
+
+.warper .pricing-table .contant ul li button{
+  background-color: #152D2C;
+  padding: 12;
+  border-radius: 5px;
+  width: 40%;
+  color: white;
+  }
+
+.warper .pricing-table .contant ul li button:hover{
+  
+  width: 60%;
+  transition: 2s;
+  font-size: 19px;
+  background-color: #3c526d;
+}
+/* End price */
+
+/* Contan us */
+
+.contactus{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-top: 2%;
+  flex-wrap:nowrap;
+  background-color: #48536e88;
+  position: relative;
+}
+.contactus h2{
+  position: absolute;
+  left:2% ;
+  top: 5%;
+  color: whitesmoke;
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-underline-offset: 3px;
+}
+
+.contactus ul{
+  position: absolute;
+  left:2% ;
+  top: 20%;
+  line-height: 35px;
+  font-size: 23;
+  list-style-type: none;
+  padding-left: 0;
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+
+.contactus .form{
+  width: 50%;
+  height: 300px;
+  background-color: rgb(218, 216, 218);
+  margin: 30px;
+  padding: 10px;
+
+}
+
+.contactus .table form input{
+  margin-left: 20;
+  padding: 4px;
+  width: 90%;
+  border: none;
+  border-bottom: 1px outset;
+  background-color: rgb(218, 216, 218);
+}
+
+.contactus .table form p {
+  margin-left: 20px;
+}
+
+.contactus .table form button{
+  position: absolute;
+  left: 80%;
+  top: 77%;
+  width: 10%;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(23, 41, 32);
+  border: 1px solid;
+  font-size: 15px;
+  border: none;
+}
+
+.pic img{
+  width: 100%;
+}
+
+.Footer{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(0, 0, 22);
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.Footer h3{
+  color: whitesmoke;
+  position: relative;
+  left: 3%;
+}
+
+
+
+
+
+.Footer .icon  a img{
+  
+display: inline-flex;
+position: relative;
+left: -99px;
+width:50px;
+margin-left: 10px;
+margin-top: 80px;
+
+
+
+  
+}
+
+
